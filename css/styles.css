@@ -1,0 +1,186 @@
+/*body {
+	background-color: red;
+}*/
+
+/*box sizing*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* Whole content styles*/
+
+
+
+body {
+	margin: 0;
+	background-color: #F5F5F5;
+	color: #7D7D80;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+h2 {
+	color: #ED2092;
+}
+
+h3 {
+	color: #000;
+}
+
+/* Header styles */
+
+header {
+	background-color: white;
+	background-size: 100%;
+}
+
+	.menu img {
+		width: 16px;
+		height: 16px;
+		margin: 0 2px -2px 0;
+	}
+
+	.menu a {
+		text-decoration: none;
+	}
+
+	.menu a:active,
+	.menu a:focus,
+	.menu a:hover {
+		border-bottom: thin solid;
+	}
+
+	/* applied to style links also in footer */
+
+	nav a {
+		color: #7D7D80;
+	} 
+
+	nav ul {
+		list-style: none;
+		float: right;
+		margin: 0;
+	}
+
+		nav li {
+			display: inline-block;
+		}
+
+
+/* Main section styles */
+section {
+	margin-bottom: 20px;
+}
+
+	section img {
+		width: 49%;
+	}
+
+	section article  {
+		width: 49%;
+		margin-left: 2%;
+		float: right;
+	}
+
+	section p:last-of-type {
+	  font-weight: bold;
+	}
+.columns {
+	padding-top: 20px;
+}
+
+	.columns article {
+		background-color: white;
+		display: inline-block;
+	    vertical-align: top;
+	    height: 220px;
+	    width: 22.5%;
+	    padding: 10px;
+	    margin: 20px 10px;
+	    border-radius: 7px;
+
+	    /* for box shadow I used http://www.cssmatic.com/box-shadow */
+
+	    -webkit-box-shadow: 0px 0px 33px -6px rgba(47,79,79,1);
+		-moz-box-shadow: 0px 0px 33px -6px rgba(47,79,79,1);
+		box-shadow: 0px 0px 33px -6px rgba(47,79,79,1); 
+	}
+
+	.columns button {
+		vertical-align: bottom;
+		border-radius: 7px;
+		background-color: #ED2092;
+		color: white;
+		font-size: 14px;
+	}
+
+
+/* Styling Footer */
+
+footer {
+	border-top:thin solid #CFCFCF;
+}
+
+	footer nav {
+		float: left;
+	}
+
+	footer ul {
+		padding: 0;
+		margin: 10px 0;
+	}
+
+	footer nav li {
+		padding: 0 10px;
+    	border-left: thin solid;
+	}
+
+	footer li:first-of-type {
+		border: none;
+		padding-left: 0;
+	}
+
+	footer a:active,
+	footer a:focus,
+	footer a:hover {
+		text-decoration: none;
+	}
+	
+	/* Styling icons */
+
+	.icons ul {
+		list-style: none;
+		float: right;
+		padding: 0;
+		margin: 10px 0;
+	}
+
+		.icons li {
+			display: inline-block;
+			margin-left: 5px;
+		}
+	/* hiding the text but leaving it accessible */
+
+	.screen-reader-text { 
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
